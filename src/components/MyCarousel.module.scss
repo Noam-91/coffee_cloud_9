@@ -1,0 +1,11 @@
+@import "src/css/variables";
+
+.Container{
+  @include paper-style($cardBaseColor);
+  width:100%;
+}
+.Item{
+  @include paper-style($baseColor);
+  padding: 10px 60px 10px 60px;
+  color: aliceblue;
+} 

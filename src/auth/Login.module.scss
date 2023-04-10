@@ -1,0 +1,49 @@
+@import '../css/variables';
+.Login {
+  border-top: 5px solid #5e97ff;
+  padding: 25px;
+  margin-top: 25px;
+  min-width: 320px;
+  max-width: 600px;
+  width: 100%;
+
+  @include flex-display(column,center,center);
+  &.invalid {
+    border-top-color: #ff2e09;
+  }
+  &.submitted {
+    border-top-color: #01a811;
+  }
+  .formGroup {
+    @include flex-display(column, center, center);
+    width: 70%;
+  }
+  .formControl {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  .error {
+    margin: -15px 0 15px;
+    color: #ff2e09;
+  }
+  .btnLogin{
+    width: 35%;
+  }
+
+  .avatar{
+    margin: 8px;
+    background-color: #B47307;
+    width: 50px;
+    height: 50px;
+  }
+
+  .signupRow{
+    @include flex-display(row, space-around, center);
+    width: 80%;
+    margin: 10px;
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+}

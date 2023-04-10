@@ -1,0 +1,20 @@
+@mixin flex-display($direction: row, $justifyContent: flex-start, $alignItems:flex-start){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+@mixin radial-mask() {
+  mask-border: radial-gradient(circle at center, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 85%);
+  mix-blend-mode: lighten;
+}
+@mixin paper-style($backgroundColor:$baseColor){
+  background-color: $backgroundColor;
+  user-select: none;
+  z-index: 9;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+$baseColor:#101010;
+$cardBaseColor: #131313;

@@ -1,0 +1,11 @@
+@import '../css/variables';
+
+.Home{
+  background-color: $baseColor;
+  @include flex-display(column,center,center);
+  width: 70%;
+
+  .TextImgBlocks{
+    @include flex-display(column,center,center);
+  }
+}

@@ -1,0 +1,21 @@
+@import "../css/variables";
+.Container{
+  @include flex-display(row,space-between,center);
+  @include paper-style;
+
+  .Title{
+    color: #EC8509;
+    font-size: 2em;
+    margin: 10px;
+  }
+  .Body{
+    color: white;
+    margin: 10px;
+  }
+  .Image{
+    background-color: transparent;
+    object-fit: cover;
+    @include radial-mask();
+  }
+
+}

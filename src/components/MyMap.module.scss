@@ -1,0 +1,9 @@
+@import "../css/variables";
+.Container{
+  @include paper-style();
+  background-color: $baseColor;
+  .Map{
+    mix-blend-mode: soft-light;
+  }
+
+}
