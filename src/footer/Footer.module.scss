@@ -4,18 +4,21 @@
   background-color: #181818;
   color: rgba(255, 255, 255, 0.53);
   width: 100%;
+  padding-top: 12px;
   .BodyContainer{
     @include flex-display(row,space-between,center);
     width: 80%;
   }
   .Join{
-
+    h3{
+      color:#EC8509;
+    }
   }
   .Subscribe{
-    width: 38%;
+    width: 40%;
     @include flex-display(row,space-around,center);
     input{
-      width: 65%;
+      width: 66%;
     }
   }
   .Social{

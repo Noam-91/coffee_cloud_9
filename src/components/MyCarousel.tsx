@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import {Button, Paper} from '@mui/material'
+import {Paper} from '@mui/material'
 import classes from './MyCarousel.module.scss'
 import {TextImageModel} from "../shared/models/TextImageModel";
 import TextImgBlock from "./TextImgBlock";

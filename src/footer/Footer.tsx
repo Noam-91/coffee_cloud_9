@@ -1,13 +1,24 @@
-import React from 'react';
+import React, {SyntheticEvent, useState} from 'react';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import classes from "./Footer.module.scss";
-import {constants} from "../shared/appConstants";
-import classNames from "classnames";
-import {NavLink} from "react-router-dom";
+import {Button, Link} from "@mui/material";
+
+
 
 const Footer = (props:FooterProps)=>{
+
+    let [email,setEmail] = useState("");
+    const inputChangeHandler=(event:SyntheticEvent)=>{
+        const elem = event.target as HTMLInputElement;
+        setEmail(elem.value);
+    }
+    const submitHandler = (event:SyntheticEvent)=>{
+        event.preventDefault();
+        // TODO
+    }
+
     return (
         <footer className={classes.Footer}>
             <div className={classes.BodyContainer}>
@@ -16,13 +27,13 @@ const Footer = (props:FooterProps)=>{
                     <p>Get updates on our latest coffee offerings and promotions.</p>
                 </div>
                 <form className={classes.Subscribe}>
-                    <input type="email" placeholder="Enter your email"/>
-                    <button type="submit">Subscribe</button>
+                    <input type="email" placeholder="Enter your email" value={email} onChange={inputChangeHandler}/>
+                    <Button type="submit" onSubmit={submitHandler}>Subscribe</Button>
                 </form>
                 <div className={classes.Social}>
-                    <a href="#"><FacebookIcon/></a>
-                    <a href="#"><TwitterIcon/></a>
-                    <a href="#"><InstagramIcon/></a>
+                    <Link href="https://www.facebook.com/" ><FacebookIcon/></Link>
+                    <Link href="https://twitter.com/"><TwitterIcon/></Link>
+                    <Link href="https://www.instagram.com/"><InstagramIcon/></Link>
                 </div>
             </div>
             <p>Copyright © Mercury 2023.</p>
