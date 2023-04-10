@@ -2,20 +2,22 @@
 .Container{
   @include flex-display(row,space-between,center);
   @include paper-style;
+  padding: 10px;
 
   .Title{
     color: #EC8509;
     font-size: 2em;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
   }
   .Body{
     color: white;
     margin: 10px;
   }
   .Image{
-    background-color: transparent;
     object-fit: cover;
-    @include radial-mask();
+    @include radial-mask(20%,75%);
+    margin: 10px 30px 10px 30px;
+    mix-blend-mode: lighten;
   }
 
 }

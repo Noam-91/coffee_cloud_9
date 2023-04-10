@@ -4,8 +4,8 @@
   justify-content: $justifyContent;
   align-items: $alignItems;
 }
-@mixin radial-mask() {
-  mask-border: radial-gradient(circle at center, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 85%);
+@mixin radial-mask($distClose: 10%, $distFar: 85%) {
+  mask-border: radial-gradient(circle at center, rgba(0, 0, 0, 1) $distClose, rgba(0, 0, 0, 0) $distFar);
   mix-blend-mode: lighten;
 }
 @mixin paper-style($backgroundColor:$baseColor){

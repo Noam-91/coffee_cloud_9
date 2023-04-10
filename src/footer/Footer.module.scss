@@ -1,0 +1,25 @@
+@import "../css/variables";
+.Footer{
+  @include flex-display(column,center,center);
+  background-color: #181818;
+  color: rgba(255, 255, 255, 0.53);
+  width: 100%;
+  .BodyContainer{
+    @include flex-display(row,space-between,center);
+    width: 80%;
+  }
+  .Join{
+
+  }
+  .Subscribe{
+    width: 38%;
+    @include flex-display(row,space-around,center);
+    input{
+      width: 65%;
+    }
+  }
+  .Social{
+    width: 8%;
+    @include flex-display(row,space-between,center);
+  }
+}

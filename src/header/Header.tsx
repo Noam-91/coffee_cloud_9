@@ -17,13 +17,13 @@ export const Header =(props:HeaderProps)=>{
                             <NavLink to={constants.homeRoute} className={classNames('nav-link', classes.navLink)} >Homepage</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to={constants.productRoute} className={classNames('nav-link', classes.navLink)}>Our Product</NavLink>
+                            <NavLink to={constants.productRoute} className={classNames('nav-link', classes.navLink)}>Our Products</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to={constants.blogRoute} className={classNames('nav-link', classes.navLink)}>Blog</NavLink>
+                            <NavLink to={constants.blogRoute} className={classNames('nav-link', classes.navLink)}>Blogs</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to={constants.contactRoute} className={classNames('nav-link', classes.navLink)}>Contact</NavLink>
+                            <NavLink to={constants.contactRoute} className={classNames('nav-link', classes.navLink)}>Contact Us</NavLink>
                         </li>
                     </ul>
                     <ul className={classNames("nav navbar-nav ms-auto",classes.rightMenu)}>

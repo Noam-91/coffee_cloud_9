@@ -40,7 +40,7 @@ const Home = (props:HomeProps)=>{
                 })}
             </div>
             <MyCarousel items={items}/>
-            <MyMap/>
+            
         </div>
     );
 }

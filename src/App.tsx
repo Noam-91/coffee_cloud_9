@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Header} from "./header/Header";
 import classes from "./App.module.scss";
+import Footer from "./footer/Footer";
 
 
 class App extends Component<any, any>{
@@ -10,6 +11,7 @@ class App extends Component<any, any>{
         <>
             <Header/>
             <main className={classes.landingPage}> {this.props.children} </main>
+            <Footer/>
         </>
     );
   }
