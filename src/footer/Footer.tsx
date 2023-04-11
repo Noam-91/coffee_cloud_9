@@ -23,7 +23,7 @@ const Footer = (props:FooterProps)=>{
         <footer className={classes.Footer}>
             <div className={classes.BodyContainer}>
                 <div className={classes.Join}>
-                    <h3>Join our newsletter</h3>
+                    <h3>Join Our Newsletter</h3>
                     <p>Get updates on our latest coffee offerings and promotions.</p>
                 </div>
                 <form className={classes.Subscribe}>

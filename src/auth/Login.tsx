@@ -6,6 +6,7 @@ import {Field, FieldProps, Form, Formik} from "formik";
 import React from "react";
 import * as Yup from 'yup';
 import {RouteComponentProps} from "react-router-dom";
+import {constants} from "../shared/appConstants";
 
 function Copyright(){
     return (
@@ -64,7 +65,7 @@ const Login = (props: LoginProps)=>{
     return (
         <Paper ref={paperRef} elevation={3} className={classes.Login}>
             <Avatar className={classes.avatar}>
-                <AccountCircleIcon sx={{width:"40px",height:"40px"}}></AccountCircleIcon>
+                <AccountCircleIcon sx={{width:"40px",height:"40px"}}/>
             </Avatar>
             <h2>Sign in</h2>
             <Formik
@@ -104,7 +105,7 @@ const Login = (props: LoginProps)=>{
                 <Link href="#" >
                     <u>Forgot password?</u>
                 </Link>
-                <Link href="#">
+                <Link href={constants.signupRoute}>
                     <u>Don't have an account? Sign Up</u>
                 </Link>
             </div>

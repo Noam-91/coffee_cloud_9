@@ -1,6 +1,7 @@
 export const constants={
     // Routes
     loginRoute:'/login',
+    signupRoute:'/signup',
     homeRoute: '/home',
     productRoute: '/products',
     blogRoute: '/blog',
@@ -12,6 +13,7 @@ export const constants={
     LOGIN: 'LOGIN',
     CHECK_LOGIN: 'CHECK_LOGIN',
     LOGOUT: 'LOGOUT',
+    SIGNUP: 'SIGNUP',
 
     // Local Storage
     token:'token',

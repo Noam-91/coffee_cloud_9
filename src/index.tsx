@@ -17,6 +17,7 @@ import Profile from "./profile/Profile";
 import Cart from "./cart/Cart";
 import Blog from "./blog/Blog";
 import {withGuard} from "./shared/HOCs/withGuard";
+import Signup from "./auth/Signup";
 
 const root = document.getElementById('root') as HTMLElement;
 const createStoreWithMiddleware = applyMiddleware(reduxPromise)(createStore);
@@ -33,6 +34,7 @@ ReactDOM.render(
                     <Route path={constants.cartRoute} component={withGuard(Cart)}/>
                     <Route path={constants.profileRoute} component={withGuard(Profile)}/>
                     <Route path={constants.loginRoute} component={Login}/>
+                    <Route path={constants.signupRoute} component={Signup}/>
                     <Redirect to={constants.homeRoute}/>
                 </Switch>
             </App>

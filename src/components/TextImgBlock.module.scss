@@ -1,6 +1,6 @@
 @import "../css/variables";
 .Container{
-  @include flex-display(row,space-between,center);
+  @include flex-display(row,space-between,flex-start);
   @include paper-style;
   padding: 10px;
 
@@ -10,12 +10,12 @@
     margin: 10px 10px 10px 10px;
   }
   .Body{
-    color: white;
+    color: #ffffff;
     margin: 10px;
   }
   .Image{
     object-fit: cover;
-    @include radial-mask(20%,75%);
+    @include radial-mask(20%,72%);
     margin: 10px 30px 10px 30px;
     mix-blend-mode: lighten;
   }

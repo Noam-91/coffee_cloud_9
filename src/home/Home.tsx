@@ -3,6 +3,7 @@ import classes from './Home.module.scss'
 import MyCarousel from "../components/MyCarousel";
 import TextImgBlock from "../components/TextImgBlock";
 import MyMap from "../components/MyMap";
+import Grids from "../components/Grids";
 
 const Home = (props:HomeProps)=>{
     const textImgContent= [
@@ -40,7 +41,7 @@ const Home = (props:HomeProps)=>{
                 })}
             </div>
             <MyCarousel items={items}/>
-            
+            <Grids/>
         </div>
     );
 }
