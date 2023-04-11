@@ -1,0 +1,11 @@
+@import "../css/variables";
+.Container{
+  @include flex-display(row,space-around,center);
+  width: 100%;
+  height: 100%;
+
+  .Icon{
+    color: #a4a4a4;
+    margin: 10px;
+  }
+}

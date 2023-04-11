@@ -36,7 +36,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
         opacity: 0,
     },
     '&:hover .imageTitle': {
-        border: '4px solid currentColor',
+        border: '2px solid currentColor',
     },
     '& .imageTitle': {
         position: 'relative',

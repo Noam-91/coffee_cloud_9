@@ -7,5 +7,5 @@ const Product = (props:ProductProps)=>{
 }
 export default Product;
 interface ProductProps{
-
+    
 }

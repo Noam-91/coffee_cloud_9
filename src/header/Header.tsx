@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom"
+import {NavLink, RouteComponentProps} from "react-router-dom"
 import {constants} from "../shared/appConstants";
 import classes from './Header.module.scss';
 import classNames from 'classnames';
-import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
-import { Badge } from "@mui/material";
+import {Badge} from "@mui/material";
+import SearchBar from "../components/SearchBar";
 
 export const Header =(props:HeaderProps)=>{
     return (
@@ -28,7 +28,7 @@ export const Header =(props:HeaderProps)=>{
                     </ul>
                     <ul className={classNames("nav navbar-nav ms-auto",classes.rightMenu)}>
                         <li>
-                            <NavLink to={constants.productRoute} className={classNames('nav-link', classes.navLink)}><SearchIcon/></NavLink>
+                            <SearchBar {...props}/>
                         </li>
                         <li>
                             <NavLink to={constants.cartRoute} className={classNames('nav-link', classes.navLink)}>
@@ -47,6 +47,6 @@ export const Header =(props:HeaderProps)=>{
     )
 }
 
-interface HeaderProps{
+interface HeaderProps extends RouteComponentProps{
 
 }

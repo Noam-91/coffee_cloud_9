@@ -4,9 +4,12 @@ import classes from "./App.module.scss";
 import Footer from "./footer/Footer";
 import {connect} from "react-redux";
 import {checkLogin} from "./actions/auth.action";
+import {RouteComponentProps, withRouter} from "react-router-dom";
 
 
-class App extends Component<any, any>{
+interface Props  extends RouteComponentProps{}
+
+class App extends Component<Props, any>{
 
     // componentDidMount() {
     //     this.props.checkLogin();
@@ -15,7 +18,7 @@ class App extends Component<any, any>{
   render(){
     return (
         <>
-            <Header/>
+            <Header history={this.props.history} match={this.props.match} location={this.props.location}/>
             <main className={classes.landingPage}> {this.props.children} </main>
             <Footer/>
         </>
@@ -24,4 +27,4 @@ class App extends Component<any, any>{
 }
 
 // export default connect(null, {checkLogin})(App);
-export default App;
+export default withRouter(App);
