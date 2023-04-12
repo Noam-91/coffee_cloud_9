@@ -3,7 +3,7 @@ import classes from './Home.module.scss'
 import MyCarousel from "../components/MyCarousel";
 import TextImgBlock from "../components/TextImgBlock";
 import MyMap from "../components/MyMap";
-import Grids from "../components/Grids";
+import Grids from "../components/grids/Grids";
 
 const Home = (props:HomeProps)=>{
     const textImgContent= [

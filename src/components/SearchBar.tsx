@@ -41,7 +41,7 @@ const SearchBar = (props:RouteComponentProps)=>{
                        ref={inputRef}
                 />
             </form>
-            <SearchIcon  className={classes.Icon} onClick={()=>{setSearchBarVisible(true)}}/>
+            <SearchIcon className={classes.Icon} onClick={()=>{setSearchBarVisible(true)}}/>
         </div>
     )
 }

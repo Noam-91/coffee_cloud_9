@@ -1,0 +1,59 @@
+@import "../css/variables";
+.Product{
+  width: 100%;
+  @include flex-display(column, center, center);
+
+}
+
+
+.Banner{
+  background-image: url("../img/product_banner.png");
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position-y: -80px;
+  background-size: cover;
+  //mask-image: linear-gradient(to left, transparent 0%, black 10%, transparent 90%);
+  width: 100%;
+  height: 440px;
+
+  @include flex-display(column, center, space-between);
+  color: rgba(253, 253, 253, 0.89);
+
+  @font-face {
+    font-family: 'Agraham';
+    src: url("../fonts/Agraham.otf");
+  }
+  @font-face {
+    font-family: 'Italiana';
+    src: url("../fonts/Italiana-Regular.ttf");
+  }
+
+  h1{
+  font-size: 3em;
+  margin: 0 0 20px 200px;
+  }
+  span{
+    font-size:4em;
+    margin: 0 0 0 200px;
+  }
+}
+
+//.Banner{
+//  background-image: url("https://www.readyseteat.com/sites/g/files/qyyrlu501/files/images/article/hero/BARISTA-STYLE-COFFEE-HERO.jpg");
+//  background-repeat: no-repeat;
+//  background-clip: content-box;
+//  background-size: cover;
+//  background-position-y: -110px;
+//  background-position-x: 75px;
+//  mix-blend-mode: screen;
+//  mask-image: linear-gradient(to left, transparent 13%, black 30%, transparent 80%);
+//  mask-mode: alpha;
+//  width: 100%;
+//  height: 420px;
+//
+//  color: #fff;
+//
+//  h1{
+//    z-index: 99;
+//  }
+//}
