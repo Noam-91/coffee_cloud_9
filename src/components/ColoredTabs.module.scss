@@ -1,8 +1,8 @@
 @import '../css/variables';
 .Tabs{
+  @include flex-display(row, space-around, center);
   font-style: normal;
-  color: red;
   .Tab{
-    color: red;
+    display: flex;
   }
 }

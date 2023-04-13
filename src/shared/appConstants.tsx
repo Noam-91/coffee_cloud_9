@@ -18,6 +18,8 @@ export const constants={
     // Local Storage
     token:'token',
 
+    // Color
+    orangeColor: '#EC8509',
 
 
 }

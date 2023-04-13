@@ -3,6 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import classes from './ColoredTabs.module.scss'
+import {constants} from "../shared/appConstants";
 
 export default function ColorTabs() {
     const [value, setValue] = React.useState('Coffee Beans');
@@ -12,15 +13,22 @@ export default function ColorTabs() {
     };
 
     return (
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
             <Tabs
                 className={classes.Tabs}
                 value={value}
                 onChange={handleChange}
-                textColor={'primary'}
-                sx={{ '& .MuiTabs-indicator': { backgroundColor: '#EC8509' }, '& .MuiTab-root': { color: '#EC8509' } }}                aria-label="Coffee Products"
+                textColor={'secondary'}
+                sx={{
+                    '& .MuiTabs-indicator': { backgroundColor: constants.orangeColor },
+                    '& .MuiTab-root': { color: constants.orangeColor },
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}
+                aria-label="Coffee Products"
             >
-                <Tab value="Coffee Beans" label="Beans" />
+                <Tab value="Coffee Beans" label="Beans" sx={{ width: '15%' }} />
                 <Tab value="Coffee Drinks" label="Drinks" />
                 <Tab value="Coffee Makers" label="Coffee Makers" />
                 <Tab value="Mugs & Bottles" label="Mugs & Bottles" />

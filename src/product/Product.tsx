@@ -1,13 +1,11 @@
 import ColoredTabs from "../components/ColoredTabs";
 import classes from "./Product.module.scss"
-import MyMap from "../components/MyMap";
 
 const Product = (props:ProductProps)=>{
     return (
         <div className={classes.Product}>
             <Banner/>
             <ColoredTabs/>
-            {/*<MyMap/>*/}
         </div>
     )
 }

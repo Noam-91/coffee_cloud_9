@@ -3,6 +3,7 @@ import img from "../img/bean_map.png"
 
 const MyMap = (props:MapProps)=>{
 
+    //TODO add pins
     const pins=[
             { name: "Area A", x: 100, y: 100, r: 25 },
             { name: "Area B", x: 300, y: 300, r: 25 },
@@ -15,7 +16,7 @@ const MyMap = (props:MapProps)=>{
         <div className={classes.Container}>
             <img className={classes.Image}
                  alt={"Coffee_map"} src={img}
-                 width={1000} height={520}
+                 width={1000} height={560}
                  useMap={"#picture-map"}
                  onDragStart={e=>{e.preventDefault()}}
             />
@@ -31,7 +32,6 @@ const MyMap = (props:MapProps)=>{
                         onClick={() => handleAreaClick({ name: pin.name })}
                     />))}
             </map>
-            <img style={{backgroundColor : "white"}} src={"https://cdn-icons-png.flaticon.com/512/64/64113.png"} alt={"test"}/>
         </div>
     )
 }
