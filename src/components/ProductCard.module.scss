@@ -1,0 +1,27 @@
+@import "../css/variables";
+.Container{
+
+  .ActionArea{
+    @include flex-display(column,center,center);
+    padding: 0;
+
+    .Image{
+      @include flex-display(column,center,center);
+      object-fit: cover;
+      width: 160px;
+      height:154px;
+      margin:5px
+    }
+
+    .Content{
+      padding:5px
+    }
+    .Name{
+      @include text-ellipsis(2);
+      font-size: 10pt;
+    }
+    .Price{
+    }
+  }
+
+}

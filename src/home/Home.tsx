@@ -2,7 +2,6 @@ import {RouteComponentProps} from "react-router-dom";
 import classes from './Home.module.scss'
 import MyCarousel from "../components/MyCarousel";
 import TextImgBlock from "../components/TextImgBlock";
-import MyMap from "../components/MyMap";
 import Grids from "../components/grids/Grids";
 
 const Home = (props:HomeProps)=>{

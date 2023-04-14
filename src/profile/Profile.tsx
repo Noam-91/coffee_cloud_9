@@ -1,7 +1,6 @@
 const Profile = (props:ProfileProps)=>{
     return (
         <div>
-
         </div>
     )
 }

@@ -19,6 +19,8 @@
     @include flex-display(row,space-around,center);
     input{
       width: 66%;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.89);
     }
   }
   .Social{

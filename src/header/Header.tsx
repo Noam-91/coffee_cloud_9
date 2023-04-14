@@ -6,8 +6,23 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import {Badge} from "@mui/material";
 import SearchBar from "../components/SearchBar";
+import {useEffect, useState} from "react";
+import {useSelector} from "react-redux";
+import {ReduxStateModel} from "../shared/models/redux-state.model";
+import {ProductModel} from "../shared/models/ProductModel";
 
 export const Header =(props:HeaderProps)=>{
+    /**
+     * maintain number in cart.
+     */
+    const [cart,setCart] = useState(()=>[] as ProductModel[]);
+    // TODO: Cart State from Redux?
+    const cartFromRedux = useSelector((reduxState: ReduxStateModel)=>reduxState.cart)
+    useEffect(()=>{
+        setCart(cartFromRedux);
+    },[cartFromRedux])
+
+
     return (
             <header className={classes.Header}>
                 <nav className="navbar navbar-dark navbar-expand-sm">
@@ -33,7 +48,7 @@ export const Header =(props:HeaderProps)=>{
                         <li>
                             <NavLink to={constants.cartRoute} className={classNames('nav-link', classes.navLink)}>
                                 {/*// TODO*/}
-                                <Badge badgeContent={666} color="secondary">
+                                <Badge badgeContent={cart?.length} color="secondary">
                                     <ShoppingCartIcon />
                                 </Badge>
                             </NavLink>
