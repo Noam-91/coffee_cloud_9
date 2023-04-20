@@ -12,7 +12,7 @@ const TextImgBlock = (props:TextImgBlockProps)=>{
                 <Typography className={classes.Body} align={"left"} variant={"body1"}>{props.article.description}</Typography>
             </div>
             <img className={classes.Image}
-                 alt={`Img_${props.name}`} src={props.imgUrl}
+                 alt={`Img_${props.name}`} src={props.image}
                  width={props.imgSize.width} height={props.imgSize.height}
                  onDragStart={e=>{e.preventDefault()}}
             />
@@ -20,7 +20,7 @@ const TextImgBlock = (props:TextImgBlockProps)=>{
         :
         <div className={classes.Container}>
             <img className={classes.Image}
-                 alt={`Img_${props.name}`} src={props.imgUrl}
+                 alt={`Img_${props.name}`} src={props.image}
                  width={props.imgSize.width} height={props.imgSize.height}
                  onDragStart={e=>{e.preventDefault()}}
             />

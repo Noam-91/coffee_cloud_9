@@ -3,6 +3,12 @@
   width: 100%;
   @include flex-display(column, center, center);
 
+  .HorizontalScrollView{
+    @include flex-display(row,center,center);
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
 }
 
 

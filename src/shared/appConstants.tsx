@@ -20,6 +20,7 @@ export const constants={
 
     // Color
     orangeColor: '#EC8509',
+    backgroundColor: '#101010'
 
 
 }

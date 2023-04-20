@@ -8,8 +8,19 @@ const Product = (props:ProductProps)=>{
         <div className={classes.Product}>
             <Banner/>
             <ColoredTabs/>
-            <div>
-                <ProductCard {...props}/><ProductCard {...props}/><ProductCard {...props}/><ProductCard {...props}/><ProductCard {...props}/>
+            <div className={classes.HorizontalScrollView}>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
+                <ProductCard {...props}/>
             </div>
         </div>
     )
@@ -19,7 +30,7 @@ interface ProductProps extends RouteComponentProps{
     
 }
 
-const Banner = (props:any)=>{
+const Banner = ()=>{
     return(
         <div className={classes.Banner}>
             <h1 style={{ fontFamily: 'Italiana' }}>Life </h1>
